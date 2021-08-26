@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skywolf627.github.io</id>
     <title>Gridea</title>
-    <updated>2021-08-26T06:11:33.829Z</updated>
+    <updated>2021-08-26T06:17:09.623Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skywolf627.github.io"/>
     <link rel="self" href="https://skywolf627.github.io/atom.xml"/>
@@ -24,8 +24,10 @@
 <h3 id="2设置模拟器代理">2.设置模拟器代理</h3>
 <blockquote>
 <ol>
-<li>Charles菜单 Help &gt; SSL Proxying &gt;  Install...or Remote ....  会弹出当前IP及端口</li>
-<li>点击模拟器设置中的WLAN &gt; 长按WIFI名称 &gt; 修改网络 &gt; 高级选项 &gt; 代理 &gt; 手动 &gt; 填入服务器IP和端口后保存</li>
+<li>Charles菜单 Help &gt; SSL Proxying &gt;  Install...or Remote ....  会弹出当前IP及端口<br>
+<img src="https://skywolf627.github.io/post-images/1629958466532.png" alt="" loading="lazy"></li>
+<li>点击模拟器设置中的WLAN &gt; 长按WIFI名称 &gt; 修改网络 &gt; 高级选项 &gt; 代理 &gt; 手动 &gt; 填入服务器IP和端口后保存<br>
+<img src="https://skywolf627.github.io/post-images/1629958508643.png" alt="" loading="lazy"></li>
 </ol>
 </blockquote>
 <h3 id="3下载证书">3.下载证书</h3>
@@ -35,7 +37,8 @@
 </blockquote>
 <h3 id="4安装证书">4.安装证书</h3>
 <blockquote>
-<p>点击通知栏下载的证书，直接安装。（此时安装到的是用户目录）</p>
+<p>点击通知栏下载的证书，直接安装。（此时安装到的是用户目录）<br>
+<img src="https://skywolf627.github.io/post-images/1629958562216.png" alt="" loading="lazy"></p>
 </blockquote>
 <h3 id="5将证书安装到系统目录">5.将证书安装到系统目录</h3>
 <blockquote>
