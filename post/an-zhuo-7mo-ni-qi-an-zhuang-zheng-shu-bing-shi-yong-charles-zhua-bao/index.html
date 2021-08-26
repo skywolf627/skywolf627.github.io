@@ -2,21 +2,21 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>好用的工具网站 | Gridea</title>
+<title>安卓7+模拟器安装证书，并使用Charles抓包 | Gridea</title>
 <link rel="shortcut icon" href="https://skywolf627.github.io/favicon.ico?v=1629956588964">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://skywolf627.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="好用的工具网站 | Gridea - Atom Feed" href="https://skywolf627.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="安卓7+模拟器安装证书，并使用Charles抓包 | Gridea - Atom Feed" href="https://skywolf627.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="随机图片
-https://picsum.photos/
-JSON生成C#实体类
-http://tool.sufeinet.com/Creater/JsonClassGenerator.aspx
-网易云API
-https://binaryif..." />
+    <meta name="description" content="1.准备工作
+
+1.安装MT管理器（酷安可下载）
+2.模拟器自带浏览器打开http://chls.pro/ssl （代理设置之前是不会自动下载证书的，这里提前打开网页是避免先设置代理再打开浏览器会弹出N个证书错误的窗口）
+
+2.设置模拟器代..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -79,38 +79,64 @@ https://binaryif..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              好用的工具网站
+              安卓7+模拟器安装证书，并使用Charles抓包
             </h2>
             <div class="post-info">
               <span>
-                2021-07-23
+                2021-08-26
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h2 id="随机图片">随机图片</h2>
-<p><a href="https://picsum.photos/">https://picsum.photos/</a></p>
-<h2 id="json生成c实体类">JSON生成C#实体类</h2>
-<p><a href="http://tool.sufeinet.com/Creater/JsonClassGenerator.aspx">http://tool.sufeinet.com/Creater/JsonClassGenerator.aspx</a></p>
-<h2 id="网易云api">网易云API</h2>
-<p><a href="https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=neteasecloudmusicapi">https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=neteasecloudmusicapi</a></p>
-<h2 id="在线代码运行">在线代码运行</h2>
-<p><a href="http://jsrun.net/">http://jsrun.net/</a></p>
+                <h3 id="1准备工作">1.准备工作</h3>
+<blockquote>
+<p>1.安装MT管理器（酷安可下载）<br>
+2.模拟器自带浏览器打开<a href="http://chls.pro/ssl">http://chls.pro/ssl</a> （代理设置之前是不会自动下载证书的，这里提前打开网页是避免先设置代理再打开浏览器会弹出N个证书错误的窗口）</p>
+</blockquote>
+<h3 id="2设置模拟器代理">2.设置模拟器代理</h3>
+<blockquote>
+<ol>
+<li>Charles菜单 Help &gt; SSL Proxying &gt;  Install...or Remote ....  会弹出当前IP及端口</li>
+<li>点击模拟器设置中的WLAN &gt; 长按WIFI名称 &gt; 修改网络 &gt; 高级选项 &gt; 代理 &gt; 手动 &gt; 填入服务器IP和端口后保存</li>
+</ol>
+</blockquote>
+<h3 id="3下载证书">3.下载证书</h3>
+<blockquote>
+<p>因为第一步已经打开了证书页面，此时只需要刷新一下浏览器页面即可<br>
+证书会自动下载</p>
+</blockquote>
+<h3 id="4安装证书">4.安装证书</h3>
+<blockquote>
+<p>点击通知栏下载的证书，直接安装。（此时安装到的是用户目录）</p>
+</blockquote>
+<h3 id="5将证书安装到系统目录">5.将证书安装到系统目录</h3>
+<blockquote>
+<p>1.使用MT管理器打开 /data/misc/user/0/cacerts-added/  找到 <strong>d692fdf1.0</strong> 文件（每个人的文件名不一样），此文件即为你刚才安装的证书，当前是再用户证书目录下<br>
+2.复制 <strong>d692fdf1.0</strong> 拷贝到 /etc/security/cacerts/ 目录下  （系统证书目录）<br>
+3.修改 <strong>d692fdf1.0</strong> 文件权限，长按文件&gt;属性  权限改成 rw-r--r--(644)，所有者和用户组全部改成root</p>
+</blockquote>
+<h3 id="完成">完成</h3>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87">随机图片</a></li>
-<li><a href="#json%E7%94%9F%E6%88%90c%E5%AE%9E%E4%BD%93%E7%B1%BB">JSON生成C#实体类</a></li>
-<li><a href="#%E7%BD%91%E6%98%93%E4%BA%91api">网易云API</a></li>
-<li><a href="#%E5%9C%A8%E7%BA%BF%E4%BB%A3%E7%A0%81%E8%BF%90%E8%A1%8C">在线代码运行</a></li>
+<li>
+<ul>
+<li><a href="#1%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">1.准备工作</a></li>
+<li><a href="#2%E8%AE%BE%E7%BD%AE%E6%A8%A1%E6%8B%9F%E5%99%A8%E4%BB%A3%E7%90%86">2.设置模拟器代理</a></li>
+<li><a href="#3%E4%B8%8B%E8%BD%BD%E8%AF%81%E4%B9%A6">3.下载证书</a></li>
+<li><a href="#4%E5%AE%89%E8%A3%85%E8%AF%81%E4%B9%A6">4.安装证书</a></li>
+<li><a href="#5%E5%B0%86%E8%AF%81%E4%B9%A6%E5%AE%89%E8%A3%85%E5%88%B0%E7%B3%BB%E7%BB%9F%E7%9B%AE%E5%BD%95">5.将证书安装到系统目录</a></li>
+<li><a href="#%E5%AE%8C%E6%88%90">完成</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -123,9 +149,9 @@ https://binaryif..." />
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://skywolf627.github.io/post/electron-zi-dong-geng-xin/">
+            <a href="https://skywolf627.github.io/post/hao-yong-de-gong-ju-wang-zhan/">
               <h3 class="post-title">
-                Electron自动更新
+                好用的工具网站
               </h3>
             </a>
           </div>
