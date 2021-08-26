@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skywolf627.github.io</id>
     <title>Gridea</title>
-    <updated>2021-08-26T05:43:18.946Z</updated>
+    <updated>2021-08-26T05:44:42.961Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skywolf627.github.io"/>
     <link rel="self" href="https://skywolf627.github.io/atom.xml"/>
@@ -41,7 +41,8 @@
 <blockquote>
 <p>1.使用MT管理器打开 /data/misc/user/0/cacerts-added/  找到 <strong>d692fdf1.0</strong> 文件（每个人的文件名不一样），此文件即为你刚才安装的证书，当前是再用户证书目录下<br>
 2.复制 <strong>d692fdf1.0</strong> 拷贝到 /etc/security/cacerts/ 目录下  （系统证书目录）<br>
-3.修改 <strong>d692fdf1.0</strong> 文件权限，长按文件&gt;属性  权限改成 rw-r--r--(644)，所有者和用户组全部改成root</p>
+3.修改 <strong>d692fdf1.0</strong> 文件权限，长按文件&gt;属性  权限改成 rw-r--r--(644)，所有者和用户组全部改成root<br>
+<img src="https://skywolf627.github.io/post-images/1629956655567.png" alt="" loading="lazy"></p>
 </blockquote>
 <h3 id="完成">完成</h3>
 ]]></content>
